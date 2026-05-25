@@ -14,13 +14,13 @@
 
 <br>
 
-[🚀 Quick Start](#-quick-start) · [✨ Features](#-features-at-a-glance) · [🔷 OOP Concepts](#-oop-concepts--applied-not-just-mentioned) · [🔑 Credentials](#-default-credentials)
+[🚀 Quick Start](#quick-start) · [✨ Features](#features-at-a-glance) · [🔷 OOP Concepts](#oop-concepts) · [🔑 Credentials](#default-credentials)
 
 </div>
 
 ---
 
-## 📌 Overview
+## Overview
 
 This is a **complete, fully functional** University Campus Management System — not a demo, not a stub. Built as an OOP semester project at **COMSATS University Islamabad**, it manages the real operational complexity of a university in one cohesive Java Swing desktop application.
 
@@ -34,31 +34,35 @@ This is a **complete, fully functional** University Campus Management System —
 
 ---
 
-## Game Visuals
+## Screenshots
 
 | Login Screen | Main Dashboard |
 |---|---|
-| ![Login Screen](screenshots/startScreen.png) | ![Main Dashboard](screenshots/gamePlay.png) |
-| **Student Panel** | **System Reports** |
-| ![Student Panel](screenshots/studentPanel.png) | ![Reports](screenshots/gameOver.png) |
+| ![Login Screen](screenshots/loginFrame.png) | ![Main Dashboard](screenshots/mainDashboard.png) |
+
+| Student Panel | System Reports |
+|---|---|
+| ![Student Panel](screenshots/studentPanel.png) | ![Reports](screenshots/systemReports.png) |
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents
 
-- [Overview](#-overview)
-- [Tech Stack](#-tech-stack)
-- [Features at a Glance](#-features-at-a-glance)
-- [OOP Concepts](#-oop-concepts--applied-not-just-mentioned)
-- [Quick Start](#-quick-start)
-- [Default Credentials](#-default-credentials)
-- [Architecture](#-architecture)
-- [Project Structure](#-project-structure)
-- [Role-Based Access](#-role-based-access)
+- [Overview](#overview)
+- [Screenshots](#screenshots)
+- [Tech Stack](#tech-stack)
+- [Features at a Glance](#features-at-a-glance)
+- [OOP Concepts](#oop-concepts)
+- [Quick Start](#quick-start)
+- [Default Credentials](#default-credentials)
+- [Architecture](#architecture)
+- [Project Structure](#project-structure)
+- [Role-Based Access](#role-based-access)
+- [Author](#author)
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | | Technology | Purpose |
 |---|---|---|
@@ -70,25 +74,22 @@ This is a **complete, fully functional** University Campus Management System —
 
 ---
 
-## ✨ Features at a Glance
+## Features at a Glance
 
-```
-  ACADEMIC MANAGEMENT          CAMPUS FACILITIES           CAMPUS SERVICES
-  ─────────────────────        ──────────────────          ───────────────────
-  ✔ Student CRUD               ✔ Library + book            ✔ Transport routes
-  ✔ Teacher CRUD                 checkout & return.        ✔  Peak-hour scheduling
-  ✔ Course CRUD                ✔ Cafeteria seat            ✔ Security incident log
-  ✔ Department CRUD              tracking                  ✔ Lockdown toggle
-  ✔ Enroll / drop courses      ✔ Hostel room               ✔ Medical emergency
-  ✔ Assign teacher & room        allocation                  chain alert
-  ✔ Schedule conflict          ✔ Facility reports          ✔ Department reports
-    detection                                               ✔ Financial reports
-  ✔ Auto-reschedule
-```
+| 🎓 Academic Management | 🏢 Campus Facilities | ⚙️ Campus Services |
+|---|---|---|
+| Student CRUD | Library + book checkout & return | Transport routes |
+| Teacher CRUD | Cafeteria seat tracking | Peak-hour schedule regeneration |
+| Course CRUD | Hostel room allocation | Security incident log |
+| Department CRUD | Facility usage reports | Lockdown toggle |
+| Enroll / drop courses | | Medical emergency chain alert |
+| Assign teacher & classroom | | Department & financial reports |
+| Schedule conflict detection | | |
+| Auto-reschedule on room change | | |
 
 ---
 
-## 🔷 OOP Concepts — Applied, Not Just Mentioned
+## OOP Concepts
 
 The entire domain is built on a single abstract root with three independent inheritance trees:
 
@@ -111,17 +112,17 @@ CampusEntity  (abstract)
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 **Prerequisites:** Java 17+ JDK · IntelliJ IDEA (Community is fine) · No other dependencies
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/your-username/campus-management-system.git
+git clone https://github.com/jawadashraf000/campus-management-system.git
 
 # 2. Open in IntelliJ → right-click src/ → Mark Directory As → Sources Root
 
-# 3. Delete stale save file if present
+# 3. Delete stale save file if present (first run only)
 rm data/campus_data.dat
 
 # 4. Run src/Main.java
@@ -131,7 +132,7 @@ On first run with no `.dat` file, the system seeds **12 students, 6 teachers, 4 
 
 ---
 
-## 🔑 Default Credentials
+## Default Credentials
 
 | Role | Username | Password |
 |------|----------|----------|
@@ -142,7 +143,9 @@ On first run with no `.dat` file, the system seeds **12 students, 6 teachers, 4 
 <details>
 <summary>View all seeded accounts</summary>
 
-**Teachers:** `teacher` / `teacher` · `teacher1` / `teacher1` · `teacher2` / `teacher2` · `teacher3` / `teacher3` · `teacher4` / `teacher4` · `teacher5` / `teacher5`
+<br>
+
+**Teachers:** `teacher` · `teacher1` · `teacher2` · `teacher3` · `teacher4` · `teacher5` — password matches username
 
 **Students:** `student` through `student11` — password matches username in each case
 
@@ -150,7 +153,7 @@ On first run with no `.dat` file, the system seeds **12 students, 6 teachers, 4 
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ```
 ┌──────────────────────────────────────────────────┐
@@ -172,7 +175,7 @@ On first run with no `.dat` file, the system seeds **12 students, 6 teachers, 4 
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -204,7 +207,7 @@ src/
 
 ---
 
-## 🔐 Role-Based Access
+## Role-Based Access
 
 | Panel | 👑 Admin | 🧑‍🏫 Teacher | 🎒 Student |
 |-------|:---:|:---:|:---:|
@@ -224,16 +227,14 @@ src/
 **Jawad Ashraf**
 GitHub: [@jawadashraf000](https://github.com/jawadashraf000)
 
-If this project inspired you, a star on the repository would be appreciated.
+If this project inspired you, a ⭐ on the repository would be appreciated.
 
 ---
 
 <div align="center">
 
 ```
-
   · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · </> · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
-
 ```
 
 *COMSATS University Islamabad · OOP Semester Project · Pure Java · No external libraries*
