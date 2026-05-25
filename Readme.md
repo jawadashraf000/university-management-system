@@ -22,7 +22,7 @@
 
 ## Overview
 
-This is a **complete, fully functional** University Campus Management System — not a demo, not a stub. Built as an OOP semester project at **COMSATS University Islamabad**, it manages the real operational complexity of a university in one cohesive Java Swing desktop application.
+This is a **complete, fully functional** University Campus Management System — not a demo, not a stub. Built as an OOP project, it manages the real operational complexity of a university in one cohesive Java Swing desktop application.
 
 > **Admin** controls everything. **Teachers** manage courses and view students. **Students** view their timetable and reports. Every action is persisted to disk automatically.
 
@@ -34,7 +34,7 @@ This is a **complete, fully functional** University Campus Management System —
 
 ---
 
-## Screenshots
+## Project Visuals
 
 | Login Screen | Main Dashboard |
 |---|---|
@@ -49,7 +49,7 @@ This is a **complete, fully functional** University Campus Management System —
 ## Table of Contents
 
 - [Overview](#overview)
-- [Screenshots](#screenshots)
+- [Projects Visuals](#project-visuals)
 - [Tech Stack](#tech-stack)
 - [Features at a Glance](#features-at-a-glance)
 - [OOP Concepts](#oop-concepts)
@@ -237,6 +237,6 @@ If this project inspired you, a ⭐ on the repository would be appreciated.
   · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · </> · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
 ```
 
-*COMSATS University Islamabad · OOP Semester Project · Pure Java · No external libraries*
+*OOP Project · Pure Java · No external libraries*
 
 </div>
