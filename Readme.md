@@ -36,9 +36,11 @@ This is a **complete, fully functional** University Campus Management System —
 
 ## Game Visuals
 
-| Login Screen | Main Dashboard | Reports |
-|---|---|---|
-| ![Login Screen](screenshots/startScreen.png) | ![Main Dashboard](screenshots/gamePlay.png) | ![Reports](screenshots/gameOver.png) |
+| Login Screen | Main Dashboard |
+|---|---|
+| ![Login Screen](screenshots/startScreen.png) | ![Main Dashboard](screenshots/gamePlay.png) |
+| **Student Panel** | **System Reports** |
+| ![Student Panel](screenshots/studentPanel.png) | ![Reports](screenshots/gameOver.png) |
 
 ---
 
