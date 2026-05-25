@@ -14,7 +14,7 @@
 
 <br>
 
-[🚀 Quick Start](#quick-start) · [✨ Features](#features-at-a-glance) · [🔷 OOP Concepts](#oop-concepts) · [🔑 Credentials](#default-credentials)
+[Quick Start](#quick-start) · [Features](#features-at-a-glance) · [OOP Concepts](#oop-concepts) · [Credentials](#default-credentials)
 
 </div>
 
@@ -37,12 +37,12 @@ This is a **complete, fully functional** University Campus Management System —
 ## Project Visuals
 
 | Login Screen | Main Dashboard |
-|---|---|
-| ![Login Screen](screenshots/loginFrame.png) | ![Main Dashboard](screenshots/mainDashboard.png) |
+|:---:|:---:|
+| <img src="screenshots/loginFrame.png" width="500"/> | <img src="screenshots/mainDashboard.png" width="500"/> |
 
 | Student Panel | System Reports |
-|---|---|
-| ![Student Panel](screenshots/studentPanel.png) | ![Reports](screenshots/systemReports.png) |
+|:---:|:---:|
+| <img src="screenshots/studentPanel.png" width="500"/> | <img src="screenshots/systemReports.png" width="500"/> |
 
 ---
 
@@ -64,13 +64,11 @@ This is a **complete, fully functional** University Campus Management System —
 
 ## Tech Stack
 
-| | Technology | Purpose |
-|---|---|---|
-| **Language** | Java 17+ | Core application logic |
-| **GUI** | Java Swing | Window, panels, tables, forms |
-| **Persistence** | Java Serialization | `.dat` file save/load with backup |
-| **Pattern** | MVC (4-layer) | GUI → Controller → Model → Persistence |
-| **Dependencies** | None | Pure Java — no Maven, no libraries |
+- **Language:**     Java 17+          — Core application logic
+- **GUI:**          Java Swing        — Windows, panels, tables, forms
+- **Persistence:** Java Serialization — `.dat` file save/load with backup
+- **Pattern:** MVC (4-layer)          — GUI → Controller → Model → Persistence
+- **Dependencies:** None              — Pure Java, no Maven, no libraries
 
 ---
 
@@ -179,28 +177,28 @@ On first run with no `.dat` file, the system seeds **12 students, 6 teachers, 4 
 
 ```
 src/
-├── Main.java                      ← Entry point
-├── Test.java                      ← Seeds all sample data on first run
+├── Main.java                ← Entry point
+├── Test.java                ← Seeds all sample data on first run
 │
 ├── model/
-│   ├── base/                      ← CampusEntity, CampusZone, 3 interfaces
-│   ├── academic/                  ← AcademicUnit, Department, Classroom, Lab, Course, Assignment, Schedule
-│   ├── facility/                  ← Facility, Library, Cafeteria, Hostel, Book
-│   ├── service/                   ← ServiceUnit, TransportService, SecurityService, HealthCenter
-│   ├── people/                    ← Student, Teacher, Admin
-│   ├── repository/                ← CampusRepository<T>
-│   └── util/                      ← UniversityStats (static counters)
+│   ├── base/                ← CampusEntity, CampusZone, 3 interfaces
+│   ├── academic/            ← AcademicUnit, Department, Classroom, Lab, Course, Assignment, Schedule
+│   ├── facility/            ← Facility, Library, Cafeteria, Hostel, Book
+│   ├── service/             ← ServiceUnit, TransportService, SecurityService, HealthCenter
+│   ├── people/              ← Student, Teacher, Admin
+│   ├── repository/          ← CampusRepository<T>
+│   └── util/                ← UniversityStats (static counters)
 │
-├── controller/                    ← AuthenticationController, StudentController,
+├── controller/              ← AuthenticationController, StudentController,
 │                                    CourseController, FacilityController, ScheduleController
 │
-├── persistence/                   ← AppState, DataManager, AutoSaveTimer
+├── persistence/             ← AppState, DataManager, AutoSaveTimer
 │
 └── gui/
     ├── LoginFrame.java
     ├── MainDashboard.java
-    ├── components/                ← SidebarButton, DashboardCard, TablePanel
-    └── panels/                    ← HomePanel, StudentPanel, TeacherPanel, DepartmentPanel,
+    ├── components/          ← SidebarButton, DashboardCard, TablePanel
+    └── panels/              ← HomePanel, StudentPanel, TeacherPanel, DepartmentPanel,
                                      CoursePanel, FacilityPanel, ServicePanel,
                                      TimetablePanel, ReportPanel, CampusMapPanel
 ```
